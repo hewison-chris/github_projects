@@ -1,0 +1,42 @@
+{
+    "name": "RESTool Github projects",
+    "favicon": "https://www.commoninja.com/public/favicon.ico",
+    "baseUrl": "https://api.github.com/orgs/bpfkorea",
+    "pages": [
+        {
+          "name": "Projects",
+          "id": "project",
+          "description": "Projects.",
+          "methods": {
+            "getAll": {
+              "label": "Get All",
+              "dataPath": "items",
+              "url": "/project",
+              "queryParams": [
+                {
+                  "name": "search",
+                  "value": "",
+                  "label": "Search",
+                  "type": "text"
+                }
+              ],
+              "display": {
+                "type": "table"
+              },
+              "fields": [
+                {
+                  "name": "id",
+                  "type": "text",
+                  "label": "ID"
+                },
+                {
+                  "name": "name",
+                  "type": "text",
+                  "label": "Name"
+                }
+              ]
+            }
+        }
+    }
+    ]
+}
